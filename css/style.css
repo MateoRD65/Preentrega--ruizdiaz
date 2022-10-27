@@ -110,6 +110,10 @@ footer {
 
 /* FIN FOOTER */
 
+.bold{
+    font-weight: 600;
+}
+
 /* Estilos para la galeria */
 
 .h-title{
@@ -233,4 +237,44 @@ footer {
     .table h2{
         margin-top: 40px;
     }
+}
+
+/* Estilos de Formularios */
+.form-container {
+	flex-direction: column;
+	margin: auto;
+	padding: 20px 10px;
+	width: 450px;
+	margin-top: 45px;
+	text-align: center;
+}
+.form-container input,
+textarea,
+select {
+	width: 100%;
+	margin-bottom: 10px;
+	padding: 5px;
+	font-size: 12px;
+}
+
+textarea {
+	min-height: 100px;
+	max-height: 100px;
+	min-width: 300px;
+	max-width: 300px;
+}
+
+fieldset {
+	border: 2px solid #000;
+	border-radius: 10px;
+    padding: 10px;
+}
+.form-container button {
+	background-color: #42295E;
+	padding: 10px 80px;
+    margin:10px;
+	color: #fff;
+}
+button:hover {
+	cursor: pointer;
 }
