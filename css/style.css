@@ -9,13 +9,22 @@ body{
 }
 
 header{
-background-color: #212529;
-margin: -20px 0 25px 0;
+align-items: center;
+padding: auto;
+
 }
 header img{
-    height: 100px;
-    align-items: center;
+    height: 70px;
 }
-header a{
-text-decoration: none;
+
+.container-welcome-text{
+text-align: center;
+margin: 15px auto 35px;
+}
+.welcome-text{
+    font-size: 30px;
+}
+.name-text{
+    color: #DC3545;
+    font-weight: 600;
 }
