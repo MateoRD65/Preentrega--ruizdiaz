@@ -1,3 +1,7 @@
+
+/* Imagenes de Undraw.co */
+/* Iconos de flaticon */
+
 *{
     margin: 0;
     padding: 0;
@@ -16,6 +20,11 @@ header{
 }
 header img{
     height: 70px;
+}
+.container-img {
+	margin: 50px 60px 120px 35px;
+	display: inline-block;
+	width: 70%;
 }
 
 .container-text{
@@ -269,7 +278,7 @@ fieldset {
 	border-radius: 10px;
     padding: 10px;
 }
-.form-container button {
+button {
 	background-color: #42295E;
 	padding: 10px 80px;
     margin:10px;
@@ -277,4 +286,49 @@ fieldset {
 }
 button:hover {
 	cursor: pointer;
+}
+
+.feedback-container{
+    position:relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    padding: 20px 100px;
+}
+
+.feedback-container::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width:100%;
+    height: 100%;
+}
+
+.contact-me{
+    max-width: 850px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.left{
+    height: 90%;
+}
+.left img{
+    height: 500px;
+}
+
+.right{
+    padding: 25px 40px;
+}
+
+.feedback-container h2{
+    position: relative;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
 }
