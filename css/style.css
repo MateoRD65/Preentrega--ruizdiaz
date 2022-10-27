@@ -27,13 +27,36 @@ header img{
 	width: 70%;
 }
 
+.container-misc {
+	display: flex;
+	flex-direction: row-reverse;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.container-img {
+    margin: 20px auto;
+	display: inline-block;
+	width: 40%;
+}
+
+.p-text{
+	margin: 30px 20px 20px 20px;
+}
+
 .container-text{
 text-align: center;
 margin: 15px auto 35px;
 }
+.title {
+	font-weight: 600;
+	font-size: 40px;
+	margin: auto auto 20px auto;
+	color: #000;
+}
 
 .name-text{
-    color: #DC3545;
+    color: #914B9D;
     font-weight: 600;
 }
 
