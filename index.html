@@ -21,7 +21,7 @@
   <body>
     <header>
       <!-- Inicio del navbar -->
-      <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+      <nav class="navbar navbar-expand-lg navbar-dark">
         <div class="container-fluid">
           <!-- Icono -->
           <a href="#" class="navbar-brand">
@@ -67,10 +67,11 @@
       </nav>
     </header>
     <main>
-        <div class="container-welcome-text">
-        <h3 class="welcome-text">Bienvenido.</h3>
+        <div class="container-text">
+        <h3 class="text">Bienvenido.</h3>
         <h1>Soy <span class="name-text">Mateo Ruiz Diaz</span>, <span class="name-text">Desarrolador Web</span></h1>
         </div>
+        <h3 class="container-text">Estos son algunos ejemplos de mi trabajo.</h3>
         <!-- Carrusel solo visible en lg o superior -->
         <div class="carousel.container m-auto w-75 d-none d-lg-block">
             <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
@@ -95,7 +96,27 @@
                 </button>
               </div>
         </div>
-
+        <!-- Cards solo visibles para resoluciones de tablet o inferiores -->
+        <div class="cards d-lg-none">
+            <div class="card" style="width: 18rem;">
+                <img src="images/carousel/Example1.png" class="card-img-top" alt="Paginas de ejemplo">
+                <div class="card-body">
+                  <p class="card-text">Este es mi primer proyecto, desarrollado en CoderHouse</p>
+                </div>
+              </div>
+              <div class="card" style="width: 18rem;">
+                <img src="images/carousel/Example2.png" class="card-img-top" alt="Paginas de ejemplo">
+                <div class="card-body">
+                  <p class="card-text">Este es mi segundo proyecto, desarrollado en CoderHouse</p>
+                </div>
+              </div>
+              <div class="card" style="width: 18rem;">
+                <img src="images/carousel/Example3.png" class="card-img-top" alt="Paginas de ejemplo">
+                <div class="card-body">
+                  <p class="card-text">Este es mi tercer proyecto, desarrollado en CoderHouse</p>
+                </div>
+              </div>
+        </div>
 
     </main>
 

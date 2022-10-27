@@ -6,25 +6,29 @@
 
 body{
     font-family: 'Ubuntu', sans-serif;
+    background-color: #D7FDFF;
 }
 
 header{
-align-items: center;
-padding: auto;
-
+    align-items: center;
+    padding: auto;
+    background-color: #566566;
 }
 header img{
     height: 70px;
 }
 
-.container-welcome-text{
+.container-text{
 text-align: center;
 margin: 15px auto 35px;
 }
-.welcome-text{
-    font-size: 30px;
-}
+
 .name-text{
     color: #DC3545;
     font-weight: 600;
+}
+
+.card{
+    margin:10px;
+    display: inline-block;
 }
