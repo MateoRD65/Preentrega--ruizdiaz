@@ -253,4 +253,31 @@ footer {
         margin-top: 40px;
     }
 }
+.form-container{
+    font-weight: 600;
+    font-size: 20px;
+}
+.button-container{
+    display: flex;
+    justify-content: space-between;
+    font-size:  15px;
+    font-weight: 600;
+}
+
+.button-container button{
+    background-color: #914B9D;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 10px;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.button-container button:hover{
+    background-color: #42295E;
+    color: #f1f1f1;
+    box-shadow: 5px 5px 15px #914B9D;
+}
+
 
