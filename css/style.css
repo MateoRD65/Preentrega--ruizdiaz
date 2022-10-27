@@ -11,7 +11,6 @@ body{
 
 header{
     align-items: center;
-    padding: auto;
     background-color: #566566;
 }
 header img{
@@ -32,3 +31,80 @@ margin: 15px auto 35px;
     margin:10px;
     display: inline-block;
 }
+
+/* FOOTER */
+footer {
+	width: 100%;
+    margin-top: 25px;
+	padding: 50px 0px;
+	background-image: url(../images/background-footer.svg);
+	background-size: cover;
+}
+
+
+.logo img {
+	height: 120px;
+	margin: -9px 5px;
+}
+.container-footer {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	max-width: 1200px;
+	margin: 50px auto;
+}
+
+.box-footer {
+	display: flex;
+	flex-direction: column;
+	padding: 40px;
+}
+
+.box-footer .terms {
+	max-width: 350px;
+	margin-top: 20px;
+	font-weight: 500;
+	color: hsl(0, 0%, 0%);
+	font-size: 18px;
+}
+
+.box-footer h2 {
+	margin-bottom: 30px;
+	color: hsl(0, 0%, 0%);
+	font-weight: 700;
+}
+
+.box-footer a {
+	margin-top: 10px;
+	color: hsl(0, 0%, 0%);
+	font-weight: 600;
+	font-family: sans-serif;
+}
+
+.box-footer a:hover {
+	opacity: 0.8;
+}
+
+.box-footer a .fab {
+	font-size: 20px;
+}
+
+.copyright {
+	max-width: 1200px;
+	margin: auto;
+	text-align: center;
+	padding: 40px 0px;
+}
+
+.copyright p {
+	margin: 20px auto;
+	color: hsl(0, 0%, 0%);
+}
+
+.copyright hr {
+	border: none;
+	height: 1px;
+	background-color: hsl(0, 0%, 0%);
+}
+
+/* FIN FOOTER */
