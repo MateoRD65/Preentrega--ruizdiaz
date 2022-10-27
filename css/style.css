@@ -11,7 +11,8 @@ body{
 
 header{
     align-items: center;
-    background-color: #566566;
+    background-color: #914B9D;
+    margin-bottom: 25px;
 }
 header img{
     height: 70px;
@@ -108,3 +109,128 @@ footer {
 }
 
 /* FIN FOOTER */
+
+/* Estilos para la galeria */
+
+.h-title{
+	text-align: center;
+	font-size: 30px;
+}
+
+.gallery {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	gap: 16px;
+	max-width: 1400px;
+	margin: 0 auto;
+	padding: 20px 10px;
+}
+
+.gallery img {
+	width: 100%;
+	max-width: 350px;
+	height: 300px;
+	object-fit: cover;
+	border-radius: 10px;
+}
+
+/* PRICING */
+.pricing-container{
+    width: 90%;
+    max-width: 900px;
+    margin: auto;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.table{
+    width: 33%;
+    height: 550px;
+    margin:auto;
+    border: 1px solid #914B9D;
+    border-radius: 10px;
+    box-shadow: 0px 0px 4px 0px #914B9D;
+    padding: 60px;
+    text-align: center;
+    flex-grow: 1;
+    color: #914B9D;
+}
+
+.table h2{
+    display: block;
+    font-size: 30px;
+    margin-bottom: 35px;
+}
+.table img{
+    width: 64px;
+    margin-bottom: 35px;
+}
+
+.table h3{
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+.table p{
+    display: block;
+    margin-bottom: 20px;
+}
+
+.table-button{
+    display: inline-block;
+    width: 150px;
+    padding: 12px;
+    background: #42295E;
+    text-decoration: none;
+    color: #fff;
+    border-radius: 100px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 600;
+    margin: auto;
+}
+
+.table:hover{
+    background: #914B9D;
+    color: #f1f1f2;
+    transition: 0.6s all;
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+@media screen and (max-width: 1000px){
+    .table{
+        width: 45%;
+        max-width: none;
+        flex-direction: column;
+        margin-bottom: 40px;
+        justify-content: space-between;
+        flex-grow: initial;
+    }
+    .table h2{
+        margin-top: 40px;
+    }
+}
+@media screen and (max-width: 700px){
+    .table{
+        width: 45%;
+        padding: 30px;
+    }
+    .table h2{
+        margin-top: 40px;
+    }
+}
+
+@media screen and (max-width: 568px){
+    .table{
+        width: 85%;
+        padding: 20px;
+    }
+    .table h2{
+        margin-top: 40px;
+    }
+}

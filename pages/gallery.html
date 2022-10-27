@@ -13,7 +13,7 @@
     <!-- CSS only -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous"/>
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="../css/style.css" />
 
     <!-- Fuentes -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -30,7 +30,7 @@
         <div class="container-fluid">
           <!-- Icono -->
           <a href="#" class="navbar-brand">
-            <img class="logo" src="images/logo.png" alt="logo de la pagina" />
+            <img class="logo" src="../images/logo.png" alt="logo de la pagina" />
             Waibi
           </a>
 
@@ -51,18 +51,18 @@
           <div class="collapse navbar-collapse" id="menu">
             <ul class="navbar-nav ms-auto">
               <li class="nav-item">
-                <a href="#" class="nav-link active">Inicio</a>
+                <a href="../index.html" class="nav-link active">Inicio</a>
               </li>
               <li class="nav-item">
-                <a href="pages/prices.html" class="nav-link">Precios</a>
+                <a href="prices.html" class="nav-link">Precios</a>
               </li>
               <!-- Dropdown -->
               <li class="nav-item dropdown">
                 <a href="" class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-bs-toggle="dropdown">Sobre mi</a>
                 <ul class="dropdown-menu bg-secundary">
-                  <li><a class="dropdown-item" href="pages/gallery.html">Galeria</a></li>
-                  <li><a class="dropdown-item" href="pages/contact.html">Contacto</a></li>
-                  <li><a class="dropdown-item" href="pages/other.html">Otros</a></li>
+                  <li><a class="dropdown-item" href="gallery.html">Galeria</a></li>
+                  <li><a class="dropdown-item" href="contact.html">Contacto</a></li>
+                  <li><a class="dropdown-item" href="other.html">Otros</a></li>
                 </ul>
               </li>
             </ul>
@@ -72,55 +72,15 @@
       </nav>
     </header>
     <main>
-        <div class="container-text">
-        <h3 class="text">Bienvenido.</h3>
-        <h1>Soy <span class="name-text">Mateo Ruiz Diaz</span>, <span class="name-text">Desarrolador Web</span></h1>
-        </div>
-        <h3 class="container-text">Estos son algunos ejemplos de mi trabajo.</h3>
-        <!-- Carrusel solo visible en lg o superior -->
-        <div class="carousel.container m-auto w-75 d-none d-lg-block">
-            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-inner">
-                  <div class="carousel-item active">
-                    <img src="images/carousel/Example1.png" class="d-block w-100" alt="Imagen de ejemplo numero 1">
-                  </div>
-                  <div class="carousel-item">
-                    <img src="images/carousel/Example2.png" class="d-block w-100" alt="Imagen de ejemplo numero 2">
-                  </div>
-                  <div class="carousel-item">
-                    <img src="images/carousel/Example3.png" class="d-block w-100" alt="Imagen de ejemplo numero 3">
-                  </div>
-                </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Next</span>
-                </button>
-              </div>
-        </div>
-        <!-- Cards solo visibles para resoluciones de tablet o inferiores -->
-        <div class="cards d-lg-none">
-            <div class="card" style="width: 18rem;">
-                <img src="images/carousel/Example1.png" class="card-img-top" alt="Paginas de ejemplo">
-                <div class="card-body">
-                  <p class="card-text">Este es mi primer proyecto, desarrollado en CoderHouse</p>
-                </div>
-              </div>
-              <div class="card" style="width: 18rem;">
-                <img src="images/carousel/Example2.png" class="card-img-top" alt="Paginas de ejemplo">
-                <div class="card-body">
-                  <p class="card-text">Este es mi segundo proyecto, desarrollado en CoderHouse</p>
-                </div>
-              </div>
-              <div class="card" style="width: 18rem;">
-                <img src="images/carousel/Example3.png" class="card-img-top" alt="Paginas de ejemplo">
-                <div class="card-body">
-                  <p class="card-text">Este es mi tercer proyecto, desarrollado en CoderHouse</p>
-                </div>
-              </div>
+        <h2 class="h-title">Aqui tienes algunos gatitos que me acompañaron mientras diseñaba las demas Paginas.</h2>
+        <h3 class="h-title d-lg-none"><i>Psst...</i> Los gatitos tambien son responsive.</h2>
+        <div class="gallery">
+            <img src="../images/gallery/gatito1.jpg" alt="Gatito lindo" />
+            <img src="../images/gallery/gatito2.jpg" alt="Gatito lindo" />
+            <img src="../images/gallery/gatito3.jpg" alt="Gatito lindo" />
+            <img src="../images/gallery/gatito4.jpg" alt="Gatito lindo" />
+            <img src="../images/gallery/gatito5.jpg" alt="Gatito lindo" />
+            <img src="../images/gallery/gatito6.jpg" alt="Gatito lindo" />
         </div>
     </main>
 
@@ -129,7 +89,7 @@
         <div class="container-footer">
             <div class="box-footer">
                 <div class="logo">
-                    <img src="images/logo.png" alt="logo de la pagina" />
+                    <img src="../images/logo.png" alt="logo de la pagina" />
                 </div>
                 <div class="terms">
                     <h2>Terminos</h2>
