@@ -13,6 +13,7 @@ body{
     font-family: 'Ubuntu', sans-serif;
     background-color: #D7FDFF;
     font-weight: 600;
+    font-size: 20px;
 }
 
 header{
@@ -66,6 +67,10 @@ margin: 15px auto 35px;
     margin:10px;
     display: inline-block;
 }
+.logo img {
+	height: 120px;
+	margin: -9px 5px;
+}
 
 /* FOOTER */
 footer {
@@ -77,10 +82,6 @@ footer {
 }
 
 
-.logo img {
-	height: 120px;
-	margin: -9px 5px;
-}
 .container-footer {
 	display: flex;
 	flex-wrap: wrap;
@@ -90,43 +91,35 @@ footer {
 }
 
 .box-footer {
-	display: flex;
-	flex-direction: column;
+	flex-direction: row;
 	padding: 40px;
-}
-
-.box-footer .terms {
-	max-width: 350px;
-	margin-top: 20px;
-	font-weight: 500;
-	color: hsl(0, 0%, 0%);
-	font-size: 18px;
+    justify-content: center;
+    text-align: center;
+    margin: -75px auto;
 }
 
 .box-footer h2 {
-	margin-bottom: 30px;
+	margin-bottom: 50px;
 	color: hsl(0, 0%, 0%);
 	font-weight: 700;
 }
 
 .box-footer a {
-	margin-top: 10px;
 	color: hsl(0, 0%, 0%);
 	font-weight: 600;
 	font-family: sans-serif;
+    margin: auto 10px;
+    text-decoration: none;
 }
 
 .box-footer a:hover {
 	opacity: 0.8;
-}
-
-.box-footer a .fab {
-	font-size: 20px;
+    color: #f1f1f1;
 }
 
 .copyright {
 	max-width: 1200px;
-	margin: auto;
+	margin: -50px auto;
 	text-align: center;
 	padding: 40px 0px;
 }
@@ -305,4 +298,13 @@ footer {
     box-shadow: 5px 5px 15px #914B9D;
 }
 
-
+/* Estilo scrollbar */
+body::-webkit-scrollbar{
+    width: .5rem;
+}
+body::-webkit-scrollbar-track{
+    background: red;
+}
+body::-webkit-scrollbar-thumb{
+    background: green;
+}
