@@ -22,9 +22,7 @@ body {
 }
 
 header {
-	align-items: center;
 	background-color: $color1;
-	margin-bottom: 25px;
 
 	img {
 		height: 70px;
@@ -57,6 +55,12 @@ header {
 .container-text {
 	text-align: center;
 	margin: 15px auto 35px;
+
+	.typed-text {
+		text-decoration: none;
+		font-weight: 600;
+		color: #914b9d;
+	}
 }
 
 .title {
@@ -64,11 +68,6 @@ header {
 	font-size: 40px;
 	margin: auto auto 20px auto;
 	color: #000;
-}
-
-.name-text {
-	color: #914b9d;
-	font-weight: 600;
 }
 
 .card {
@@ -267,7 +266,11 @@ header {
 
 body {
 	&::-webkit-scrollbar {
-		width: 0.25rem;
+		width: 7px;
+	}
+
+	&::-webkit-scrollbar-track {
+		background-color: #914b9d;
 	}
 
 	&::-webkit-scrollbar-thumb {
