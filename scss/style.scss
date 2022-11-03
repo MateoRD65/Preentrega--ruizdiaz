@@ -1,0 +1,278 @@
+/* Imagenes de Undraw.co */
+/* Iconos de flaticon */
+/* Waibi */
+
+//VARIABLES:
+$color1: #8270c3;
+//
+
+@import "footer";
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: "Ubuntu", sans-serif;
+	background-color: #d7fdff;
+	font-weight: 600;
+	font-size: 20px;
+}
+
+header {
+	align-items: center;
+	background-color: $color1;
+	margin-bottom: 25px;
+
+	img {
+		height: 70px;
+	}
+}
+
+.container-img {
+	margin: 50px 60px 120px 35px;
+	display: inline-block;
+	width: 70%;
+}
+
+.container-misc {
+	display: flex;
+	flex-direction: row-reverse;
+	flex-wrap: wrap;
+	align-items: center;
+}
+
+.container-img {
+	margin: 20px auto;
+	display: inline-block;
+	width: 40%;
+}
+
+.p-text {
+	margin: 30px 20px 20px 20px;
+}
+
+.container-text {
+	text-align: center;
+	margin: 15px auto 35px;
+}
+
+.title {
+	font-weight: 600;
+	font-size: 40px;
+	margin: auto auto 20px auto;
+	color: #000;
+}
+
+.name-text {
+	color: #914b9d;
+	font-weight: 600;
+}
+
+.card {
+	margin: 10px;
+	display: inline-block;
+}
+
+.logo img {
+	height: 120px;
+	margin: -9px 5px;
+}
+
+.bold {
+	font-weight: 600;
+}
+
+/* Estilos para la galeria */
+
+.h-title {
+	text-align: center;
+	font-size: 30px;
+}
+
+.gallery {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	gap: 16px;
+	max-width: 1400px;
+	margin: 0 auto;
+	padding: 20px 10px;
+
+	img {
+		width: 100%;
+		max-width: 350px;
+		height: 300px;
+		object-fit: cover;
+		border-radius: 10px;
+
+		&:hover {
+			opacity: 0.9;
+			border-bottom: 3px solid #42295e;
+			box-shadow: 2px 0px 4px #42295e;
+		}
+	}
+}
+
+/* PRICING */
+
+.pricing-container {
+	width: 90%;
+	max-width: 900px;
+	margin: auto;
+	display: flex;
+	justify-items: center;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+.table {
+	width: 33%;
+	height: 550px;
+	margin: auto;
+	border: 1px solid #914b9d;
+	border-radius: 10px;
+	box-shadow: 0px 0px 4px 0px #914b9d;
+	padding: 60px;
+	text-align: center;
+	flex-grow: 1;
+	color: #914b9d;
+
+	a {
+		text-decoration: none;
+		color: #fff;
+	}
+	h2 {
+		display: block;
+		font-size: 30px;
+		margin-bottom: 35px;
+	}
+
+	img {
+		width: 64px;
+		margin-bottom: 35px;
+	}
+
+	h3 {
+		font-size: 30px;
+		margin-bottom: 20px;
+	}
+
+	p {
+		display: block;
+		margin-bottom: 20px;
+	}
+
+	&:hover {
+		background: #8270c3;
+		color: #f1f1f2;
+		transition: 0.6s all;
+		transform: scale(1.07);
+		cursor: pointer;
+	}
+}
+
+.table-button {
+	display: inline-block;
+	width: 150px;
+	padding: 12px;
+	background: #914b9d;
+	text-decoration: none;
+	color: #fff;
+	border-radius: 100px;
+	text-align: center;
+	font-size: 14px;
+	font-weight: 600;
+	margin: auto;
+
+	&:hover {
+		background: #42295e;
+		color: #f1f1f2;
+		transition: 0.6s all;
+		transform: scale(1.07);
+		cursor: pointer;
+	}
+}
+
+@media screen and (max-width: 1000px) {
+	.table {
+		width: 45%;
+		max-width: none;
+		flex-direction: column;
+		margin-bottom: 40px;
+		justify-content: space-between;
+		flex-grow: initial;
+
+		h2 {
+			margin-top: 40px;
+		}
+	}
+}
+
+@media screen and (max-width: 700px) {
+	.table {
+		width: 45%;
+		padding: 30px;
+
+		h2 {
+			margin-top: 40px;
+		}
+	}
+}
+
+@media screen and (max-width: 568px) {
+	.table {
+		width: 85%;
+		padding: 20px;
+
+		h2 {
+			margin-top: 40px;
+		}
+	}
+}
+
+.form-container {
+	font-weight: 600;
+	font-size: 20px;
+}
+
+.button-container {
+	display: flex;
+	justify-content: space-between;
+	font-size: 15px;
+	font-weight: 600;
+
+	button {
+		background-color: #914b9d;
+		color: #fff;
+		border: none;
+		border-radius: 4px;
+		padding: 10px;
+		font-size: 30px;
+		font-weight: 600;
+
+		&:hover {
+			background-color: #42295e;
+			color: #f1f1f1;
+			box-shadow: 5px 5px 15px #914b9d;
+		}
+	}
+}
+
+/* Estilo scrollbar */
+
+body {
+	&::-webkit-scrollbar {
+		width: 0.25rem;
+	}
+
+	&::-webkit-scrollbar-thumb {
+		background: #42295e;
+		border-radius: 25px;
+		opacity: 0.2;
+	}
+}
