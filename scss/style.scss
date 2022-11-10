@@ -4,6 +4,8 @@
 
 //VARIABLES:
 $color1: #8270c3;
+$color-respaldo: #8270c3;
+$primary-color: #42295e;
 //
 
 @import "footer";
@@ -16,13 +18,31 @@ $color1: #8270c3;
 
 body {
 	font-family: "Ubuntu", sans-serif;
-	background-color: #d7fdff;
+	background-color: #000;
 	font-weight: 600;
 	font-size: 20px;
+
+	/* Estilo scrollbar */
+	//ESTILOS DE SCROLLBAR
+	&::-webkit-scrollbar {
+		width: 7px;
+	}
+
+	&::-webkit-scrollbar-track {
+		background-color: #914b9d;
+	}
+
+	&::-webkit-scrollbar-thumb {
+		background: #42295e;
+		border-radius: 25px;
+		opacity: 0.2;
+	}
 }
 
 header {
-	background-color: $color1;
+	background-color: #42295e;
+	color: #fff;
+	margin-bottom: 30px;
 
 	img {
 		height: 70px;
@@ -42,12 +62,6 @@ header {
 	align-items: center;
 }
 
-.container-img {
-	margin: 20px auto;
-	display: inline-block;
-	width: 40%;
-}
-
 .p-text {
 	margin: 30px 20px 20px 20px;
 }
@@ -55,11 +69,12 @@ header {
 .container-text {
 	text-align: center;
 	margin: 15px auto 35px;
+	color: #fff;
 
 	.typed-text {
 		text-decoration: none;
 		font-weight: 600;
-		color: #914b9d;
+		color: $color-respaldo;
 	}
 }
 
@@ -89,6 +104,7 @@ header {
 .h-title {
 	text-align: center;
 	font-size: 30px;
+	color: #f1f1f2;
 }
 
 .gallery {
@@ -113,6 +129,7 @@ header {
 			opacity: 0.9;
 			border-bottom: 3px solid #42295e;
 			box-shadow: 2px 0px 4px #42295e;
+			transform: scale(1.1);
 		}
 	}
 }
@@ -167,7 +184,7 @@ header {
 	}
 
 	&:hover {
-		background: #8270c3;
+		background: #42295e;
 		color: #f1f1f2;
 		transition: 0.6s all;
 		transform: scale(1.07);
@@ -259,23 +276,5 @@ header {
 			color: #f1f1f1;
 			box-shadow: 5px 5px 15px #914b9d;
 		}
-	}
-}
-
-/* Estilo scrollbar */
-
-body {
-	&::-webkit-scrollbar {
-		width: 7px;
-	}
-
-	&::-webkit-scrollbar-track {
-		background-color: #914b9d;
-	}
-
-	&::-webkit-scrollbar-thumb {
-		background: #42295e;
-		border-radius: 25px;
-		opacity: 0.2;
 	}
 }
