@@ -3,13 +3,12 @@
 /* Waibi */
 
 //VARIABLES:
-$color1: #8270c3;
-$color-respaldo: #8270c3;
-$primary-color: #42295e;
+$scolor: #8270c3;
+$pcolor: #42295e;
+$tcolor: #914b9d;
+$wcolor: #f1f1f1;
 //
-
 @import "footer";
-
 * {
 	margin: 0;
 	padding: 0;
@@ -19,7 +18,6 @@ $primary-color: #42295e;
 body {
 	font-family: "Ubuntu", sans-serif;
 	background-color: #000;
-	font-weight: 600;
 	font-size: 20px;
 
 	/* Estilo scrollbar */
@@ -29,19 +27,19 @@ body {
 	}
 
 	&::-webkit-scrollbar-track {
-		background-color: #914b9d;
+		background-color: $tcolor;
 	}
 
 	&::-webkit-scrollbar-thumb {
-		background: #42295e;
+		background: $pcolor;
 		border-radius: 25px;
 		opacity: 0.2;
 	}
 }
 
 header {
-	background-color: #42295e;
-	color: #fff;
+	background-color: $pcolor;
+	color: $tcolor;
 	margin-bottom: 30px;
 
 	img {
@@ -50,9 +48,9 @@ header {
 }
 
 .container-img {
-	margin: 50px 60px 120px 35px;
+	margin: auto;
 	display: inline-block;
-	width: 70%;
+	width: 40%;
 }
 
 .container-misc {
@@ -60,29 +58,29 @@ header {
 	flex-direction: row-reverse;
 	flex-wrap: wrap;
 	align-items: center;
-}
-
-.p-text {
-	margin: 30px 20px 20px 20px;
+	.p-text {
+		margin: 30px;
+		font-style: normal;
+	}
 }
 
 .container-text {
 	text-align: center;
 	margin: 15px auto 35px;
-	color: #fff;
+	color: $tcolor;
 
 	.typed-text {
 		text-decoration: none;
 		font-weight: 600;
-		color: $color-respaldo;
+		color: $scolor;
 	}
 }
 
 .title {
 	font-weight: 600;
 	font-size: 40px;
-	margin: auto auto 20px auto;
-	color: #000;
+	margin: auto;
+	color: $wcolor;
 }
 
 .card {
@@ -104,7 +102,7 @@ header {
 .h-title {
 	text-align: center;
 	font-size: 30px;
-	color: #f1f1f2;
+	color: $wcolor;
 }
 
 .gallery {
@@ -127,9 +125,10 @@ header {
 
 		&:hover {
 			opacity: 0.9;
-			border-bottom: 3px solid #42295e;
-			box-shadow: 2px 0px 4px #42295e;
+			border-bottom: 3px solid $pcolor;
+			box-shadow: 2px 0px 4px $pcolor;
 			transform: scale(1.1);
+			transition: 0.9s all;
 		}
 	}
 }
@@ -137,9 +136,10 @@ header {
 /* PRICING */
 
 .pricing-container {
-	width: 90%;
+	width: 100%;
 	max-width: 900px;
 	margin: auto;
+	padding: auto;
 	display: flex;
 	justify-items: center;
 	align-items: center;
@@ -149,18 +149,19 @@ header {
 .table {
 	width: 33%;
 	height: 550px;
-	margin: auto;
-	border: 1px solid #914b9d;
+	margin: 1px;
+	border: 1px solid $tcolor;
 	border-radius: 10px;
-	box-shadow: 0px 0px 4px 0px #914b9d;
+	box-shadow: 0px 0px 4px 0px $tcolor;
 	padding: 60px;
 	text-align: center;
 	flex-grow: 1;
-	color: #914b9d;
+	color: $wcolor;
+	background-color: $pcolor;
 
 	a {
 		text-decoration: none;
-		color: #fff;
+		color: $tcolor;
 	}
 	h2 {
 		display: block;
@@ -184,8 +185,8 @@ header {
 	}
 
 	&:hover {
-		background: #42295e;
-		color: #f1f1f2;
+		background: $pcolor;
+		color: $wcolor;
 		transition: 0.6s all;
 		transform: scale(1.07);
 		cursor: pointer;
@@ -196,9 +197,9 @@ header {
 	display: inline-block;
 	width: 150px;
 	padding: 12px;
-	background: #914b9d;
+	background: $tcolor;
 	text-decoration: none;
-	color: #fff;
+	color: $tcolor;
 	border-radius: 100px;
 	text-align: center;
 	font-size: 14px;
@@ -206,8 +207,8 @@ header {
 	margin: auto;
 
 	&:hover {
-		background: #42295e;
-		color: #f1f1f2;
+		background: $pcolor;
+		color: $wcolor;
 		transition: 0.6s all;
 		transform: scale(1.07);
 		cursor: pointer;
@@ -250,6 +251,7 @@ header {
 		}
 	}
 }
+/* FIN DEL PRICING*/
 
 .form-container {
 	font-weight: 600;
@@ -263,8 +265,8 @@ header {
 	font-weight: 600;
 
 	button {
-		background-color: #914b9d;
-		color: #fff;
+		background-color: $tcolor;
+		color: $tcolor;
 		border: none;
 		border-radius: 4px;
 		padding: 10px;
@@ -272,9 +274,23 @@ header {
 		font-weight: 600;
 
 		&:hover {
-			background-color: #42295e;
-			color: #f1f1f1;
-			box-shadow: 5px 5px 15px #914b9d;
+			transform: scale(1.05);
+			transition: 0.7s all;
+			color: #858585;
 		}
 	}
+}
+
+.page-title {
+	font-weight: 600;
+	text-align: center;
+	color: $wcolor;
+}
+.form-box {
+	background-color: $pcolor;
+	color: $wcolor;
+}
+
+.ptext {
+	font-size: 26px;
 }

@@ -4,6 +4,7 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta content="description" />
 		<script src="https://kit.fontawesome.com/954af59329.js" crossorigin="anonymous"></script>
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -74,11 +75,11 @@
 									id="navbarDropdown"
 									role="button"
 									data-bs-toggle="dropdown"
-									>Sobre mi</a
+									>Otros</a
 								>
 								<ul class="dropdown-menu bg-secundary">
 									<li><a class="dropdown-item" href="pages/gallery.html">Galeria</a></li>
-									<li><a class="dropdown-item" href="pages/other.html">Otros</a></li>
+									<li><a class="dropdown-item" href="pages/aboutme.html">Sobre Mi.</a></li>
 								</ul>
 							</li>
 						</ul>
@@ -89,7 +90,6 @@
 		</header>
 		<main>
 			<div class="container-text">
-				<h3 class="text">Bienvenido.</h3>
 				<h1>
 					Soy <span class="bold">Mateo Ruiz Diaz</span>,
 					<span class="typed"></span>
@@ -97,7 +97,9 @@
 			</div>
 			<h3 class="container-text">Estos son algunos ejemplos de mi trabajo.</h3>
 			<!-- Carrusel solo visible en lg o superior -->
-			<div class="carousel.container m-auto w-75 d-none d-lg-block">
+			<div
+				class="carousel.container m-auto w-75 d-none d-lg-block border border-white container-carousel"
+			>
 				<div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
 					<div class="carousel-inner">
 						<div class="carousel-item active">
@@ -143,7 +145,7 @@
 				</div>
 			</div>
 			<!-- Cards solo visibles para resoluciones de tablet o inferiores -->
-			<div class="cards d-lg-none">
+			<div class="cards d-lg-none container">
 				<div class="card" style="width: 18rem">
 					<img src="images/carousel/Example1.png" class="card-img-top" alt="Paginas de ejemplo" />
 					<div class="card-body">
