@@ -31,66 +31,80 @@
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 		<link
-			href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap"
+			href="https://fonts.googleapis.com/css2?family=Urbanist:wght@500&display=swap"
 			rel="stylesheet"
 		/>
 	</head>
 	<body>
 		<header>
-			<!-- Inicio del navbar -->
-			<nav class="navbar navbar-expand-lg navbar-dark">
-				<div class="container-fluid">
-					<!-- Icono -->
-					<a href="#" class="navbar-brand">
-						<img class="navbar-brand" src="images/logo.png" alt="logo de la pagina" />
-						Waibi
+			<div class="container-fluid">
+				<div class="navb-logo">
+					<a href="#"><img src="images/logo.png" alt="Logo principal de la pagina." />Waibi</a>
+				</div>
+				<div class="navb-items d-none d-xl-flex">
+					<div class="item">
+						<a href="#">Inicio</a>
+					</div>
+					<div class="item"><a href="pages/prices.html">Precios</a></div>
+					<div class="item"><a href="pages/aboutme.html">Acerca de</a></div>
+					<div class="item"><a href="pages/gallery.html">Galeria</a></div>
+					<div class="item-button"><a href="pages/contact.html">Contacto</a></div>
+				</div>
+
+				<!-- BOOTSTRAP PARA EL MENU RESPONSIVE -->
+				<div class="mobile-toggler d-lg-none">
+					<a href="#" data-bs-toggle="modal" data-bs-target="#navbmodal">
+						<i class="fa-solid fa-bars"></i>
 					</a>
+				</div>
 
-					<!-- Menu -->
-					<button
-						class="navbar-toggler"
-						type="button"
-						data-bs-toggle="collapse"
-						data-bs-target="#menu"
-						aria-controls="navbarSupportedContent"
-						aria-expanded="false"
-						aria-label="Toggle navigation"
-					>
-						<span class="navbar-toggler-icon"></span>
-					</button>
-
-					<!-- Links -->
-					<div class="collapse navbar-collapse" id="menu">
-						<ul class="navbar-nav ms-auto">
-							<li class="nav-item">
-								<a href="#" class="nav-link active">Inicio</a>
-							</li>
-							<li class="nav-item">
-								<a href="pages/prices.html" class="nav-link">Precios</a>
-							</li>
-							<li class="nav-item">
-								<a href="pages/contact.html" class="nav-link">Contacto</a>
-							</li>
-							<!-- Dropdown -->
-							<li class="nav-item dropdown">
-								<a
-									href=""
-									class="nav-link dropdown-toggle"
-									id="navbarDropdown"
-									role="button"
-									data-bs-toggle="dropdown"
-									>Otros</a
-								>
-								<ul class="dropdown-menu bg-secundary">
-									<li><a class="dropdown-item" href="pages/gallery.html">Galeria</a></li>
-									<li><a class="dropdown-item" href="pages/aboutme.html">Sobre Mi.</a></li>
-								</ul>
-							</li>
-						</ul>
-						<hr class="text-white-50" />
+				<!-- Menu del navbar-->
+				<div
+					class="modal fade"
+					id="navbmodal"
+					tabindex="-1"
+					aria-labelledby="exampleModalLabel"
+					aria-hidden="true"
+				>
+					<div class="modal-dialog">
+						<div class="modal-content">
+							<div class="modal-header">
+								<img src="images/logo.png" alt="" />
+								<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+									<i class="fa-sharp fa-solid fa-xmark"></i>
+								</button>
+							</div>
+							<div class="modal-body">
+								<div class="modal-line">
+									<nav>
+										<ul>
+											<li>
+												<a href="#">Inicio</a>
+											</li>
+											<li>
+												<a href="pages/prices.html">Precios</a>
+											</li>
+											<li>
+												<a href="pages/aboutme.html">Acerca de</a>
+											</li>
+											<li><a href="pages/gallery.html">Galeria</a></li>
+											<li>
+												<a class="navb-button" type="button" href="pages/contact.html">Contacto</a>
+											</li>
+										</ul>
+									</nav>
+								</div>
+							</div>
+							<div class="modal-mobile-footer">
+								<i class="fa-brands fa-instagram"></i><a href="https://www.instagram.com/ybktz/"></a>
+								<i class="fa-brands fa-linkedin"></i><a href="https://linkedin.com/in/mruizdiaz"></a>
+								<i class="fa-brands fa-twitter"></i><a href="https://twitter.com/Mateord65"></a>
+								<i class="fa-brands fa-facebook-f"></i><a href="https://www.facebook.com/"></a>
+							</div>
+						</div>
 					</div>
 				</div>
-			</nav>
+			</div>
 		</header>
 		<main>
 			<div class="container-text">
@@ -176,10 +190,16 @@
 			<div class="container-footer">
 				<div class="box-footer">
 					<h2>Redes Sociales</h2>
-					<a href="https://twitter.com/home" target="_blank"><i class="fa-brands fa-twitter"></i></a>
-					<a href="https://github.com/" target="_blank"><i class="fa-brands fa-github"></i></a>
-					<a href="https://www.whatsapp.com/" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
-					<a href="https://www.linkedin.com/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+					<a href="https://twitter.com/home" target="_blank"
+						><i class="fa-2xl fa-brands fa-twitter"></i
+					></a>
+					<a href="https://github.com/" target="_blank"><i class="fa-2xl fa-brands fa-github"></i></a>
+					<a href="https://www.whatsapp.com/" target="_blank"
+						><i class="fa-2xl fa-brands fa-whatsapp"></i
+					></a>
+					<a href="https://www.linkedin.com/" target="_blank"
+						><i class="fa-2xl fa-brands fa-linkedin"></i
+					></a>
 				</div>
 			</div>
 			<div class="copyright">
